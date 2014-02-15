@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url(../bilder/hintergrund.jpg);
+    background-repeat: repeat;
+    color: #fff;
+    margin-top: 50px;
+}
+h1 {
+    padding-top: 5px;
+    font-size: 15px;
+    color: #fff;
+}
+
+a {
+    color: #0002ff;
+    text-decoration: none;
+}
+
+header {
+    background-color: #1384ed;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    top: 0px;
+}
+
+#wrapper {
+    padding: 25px;
+}
+
+#wrapper .button {
+    display: block;
+    margin: 15px 0px;
+    padding: 5px 10px;
+    text-align: center;
+    color: #333;
+    background-color: #ccc;
+    border: solid 1px #666;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+#wrapper .button:active {
+    color: #ccc;
+    background-color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px; 
+    padding-bottom: 10px;
+}
+
