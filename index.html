@@ -1,37 +1,63 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Mobil Website</title>
-    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    
-    <header>
-        <h1>CacheGuennis Web-App</h1>
-    </header>
- 
-    <div id="wrapper">
+<html>
+    <head>
+    <title>Der Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
         
-        <a id="btn_s1" class="button">Seite 1</a>
-        <a id="btn_s2" class="button">Seite 2</a>
-        <a id="btn_s3" class="button">Seite 3</a>
-        <a id="btn_s4" class="button">Wetter</a>
+    <!-- Einbindung von jQuery und jQuery Mobile -->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.1.min.css" />
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery.mobile-1.4.1.min.js"></script>
+	
+	<!-- Einstellungen zur Defintion als WebApp -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+        <!--
+	<link rel="apple-touch-icon-precomposed" href="bilder/icon-ipad.png" sizes="72x72" />
+	<link rel="apple-touch-icon-precomposed" href="bilder/icon-iphone-retina.png" sizes="114x114" />
+	<link rel="apple-touch-icon-precomposed" href="bilder/icon-ipad-retina.png" sizes="144x144" />
+	<link rel="apple-touch-icon-precomposed" href="bilder/icon-iphone.png" />
+	-->
+        
+	<!-- Google Fonts laden -->
 
+        <!-- Weitere Stile -->
+	<link rel="stylesheet" href="css/styles.css" />
+	
+</head>
+<body> 
+
+<!-- Startseite Seite -->
+<div data-role="page" id="startseite">
+    <div data-role="content">
         
-        <div id="content"></div>
+        <!--<img src="" class="bild_schatten" />-->
+        <h1>Ahoi & herzlich willkommen beim Heiteren Hering</h1> 
         
-    </div>
-    
-    <footer>
-        <p>
-            Powered by <a href="http://www.smg-webdesign.de" target="_blank">SMG-Webdesign</a>
+        <p>Der Heitere Hering ist das älteste Fischrestaurant in ganz Deutschland und versorgt Sie nach Ihrem Besuch des Aquariums mit den besten Fischspezialitäten. Keine Angst, die Fische stammen nicht aus dem Aquarium.</p>
+        
+        <p>Benutzen Sie die untere Leiste, um mehr über unser Restaurant zu erfahren, die Speisekarte aufzurufen oder uns zu kontaktieren. Wir freuen uns auf Ihren Besuch.       
         </p>
-    </footer>
-    
-    <script src=js/zepto.min.js></script>
-    <script src=js/befehle.js></script>       
-      
-</body>
-</html>	
+        
+    </div><!-- /content-->
+ 
+	<div data-role="footer" data-id="footernav" data-tap-toggle="false" data-position="fixed" data-theme="b">
+		<div data-role="navbar" data-theme="a">
+			<ul>
+				<li><a href="#menue" data-icon="star" data-transition="fade">MENÜ</a></li>				
+				<li><a href="#anfahrt" data-icon="star" data-transition="fade">ANFAHRT</a></li>
+				<li><a href="#kontakt" data-icon="star" data-transition="fade">KONTAKT</a></li>
+			</ul>
+		</div><!--/navbar  -->     
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+
+<!--
+########################################################################################
+########################################################################################
+Neue Seite
+########################################################################################
+########################################################################################
+-->
