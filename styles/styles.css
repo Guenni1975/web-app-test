@@ -8,13 +8,13 @@
 body {
     background-image: url(../bilder/hintergrund.jpg);
     background-repeat: repeat;
-    color: #fff;
+    color: #000;
     margin-top: 50px;
 }
 h1 {
     padding-top: 5px;
     font-size: 15px;
-    color: #fff;
+    color: #000;
 }
 
 a {
@@ -46,6 +46,7 @@ header {
     border: solid 1px #666;
     border-radius: 25px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
 }
 
 #wrapper .button:active {
